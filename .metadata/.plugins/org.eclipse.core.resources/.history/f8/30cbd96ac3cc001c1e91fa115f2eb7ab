@@ -1,0 +1,42 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exemplo02 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		scan.useLocale(Locale.US);
+		
+		float n1, n2;
+		System.out.println("Digite o 1º numero: ");
+		n1 = scan.nextInt();
+		
+		System.out.println("Digite 2º numero: ");
+		n2 = scan.nextInt();
+		
+		
+		//Operações Matemáticas
+		float soma = n1 + n2;		//soma
+		System.out.println("A soma dos valores = " + soma);
+		
+		float sub = n1 - n2;		//subtração
+		System.out.println("A subtração de n1 por n2 = " + sub);
+		
+		float mult = n1 * n2;		//multiplicação
+		System.out.println("A multiplicação dos valores = " + mult);
+		
+		float div;
+		if(n2 != 0) {
+			div = n1 / n2;		// divisão
+			System.out.println("A divisão de n1 por n2 = " + div);
+		}
+		
+		double potencia = Math.pow(n1, n2);
+		System.out.println("N1 elevado a N2 = " + potencia);
+		
+		
+		scan.close();
+	}
+
+}

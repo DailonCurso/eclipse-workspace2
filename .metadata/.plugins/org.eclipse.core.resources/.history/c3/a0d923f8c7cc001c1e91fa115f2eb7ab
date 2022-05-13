@@ -1,0 +1,49 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exemplo02 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		scan.useLocale(Locale.US);
+		
+		float n1, n2;
+		System.out.println("Digite o 1º numero: ");
+		n1 = scan.nextInt();
+		
+		System.out.println("Digite 2º numero: ");
+		n2 = scan.nextInt();
+		
+		
+		//Operações Matemáticas
+		float soma = n1 + n2;		//soma
+		float sub = n1 - n2;		//subtração
+		float mult = n1 * n2;		//multiplicação
+		
+		float div;
+		if(n2 != 0) {
+			div = n1 / n2;		// divisão
+			System.out.println("A divisão de n1 por n2 = " + div);
+		}
+		
+		double potencia = Math.pow(n1, n2);
+		double raizN1 = Math.sqrt(n1);
+		double raizN2 = Math.sqrt(n2);
+		
+		System.out.println("A soma dos valores = " + String.format("%.2f", soma)); // Mensagem + Formatação do conteúdo da variável
+		System.out.println(String.format("A subtração de n1 por n2 = %.2f", sub)); // Mensagem com a indicação, variável
+		System.out.println(String.format("%s = %.2f", "A multiplicação dos valores ", mult));
+		System.out.println("N1 elevado a N2 = " + potencia);
+		
+		System.out.println("A raiz de N1 = " + String.format("%.2f", raizN1));
+		System.out.println(String.format("A raiz de N2 = %.2f", raizN2));
+		
+		
+
+		
+		
+		scan.close();
+	}
+
+}

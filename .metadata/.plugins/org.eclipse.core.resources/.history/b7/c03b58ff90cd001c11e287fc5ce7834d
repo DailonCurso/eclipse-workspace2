@@ -1,0 +1,12 @@
+
+public class Questao04 {
+
+	public static void main(String[] args) {
+		// Ler nome, valor da hora, horas trabalhadas e apresentar o salário: <fulano> vai receber R$ <xx.xx> 
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite o nome do funcionário: ");
+		scan.close();
+	}
+
+}

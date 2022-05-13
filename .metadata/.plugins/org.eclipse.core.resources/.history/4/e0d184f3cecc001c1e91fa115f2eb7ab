@@ -1,0 +1,17 @@
+
+public class Exemplo01 {
+
+	public static void main(String[] args) {
+		String nome = "Luiz Felipe";
+		String cpf = "000.032.651-24";
+		
+		String cidade = "Brasília";
+		String nacionalidade ="Brasileiro(a)";
+		
+		
+		String declaracao = String.format("Eu %s portador do CPF: %s., %s residente e domiciliado em $s", nacionalidade, cidade, nome, cpf );
+		
+		System.out.println(declaracao);
+	}
+
+}

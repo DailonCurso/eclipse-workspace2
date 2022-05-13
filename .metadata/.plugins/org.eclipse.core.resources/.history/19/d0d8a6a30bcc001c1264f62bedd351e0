@@ -1,0 +1,48 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exemplo01 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		scan.useLocale(Locale.US);
+		
+		//Variaveis
+		int n1, n2;
+		int div, resto;
+		
+		//Entrada e dados
+		System.out.println("Digite 1 numero:");
+		n1 = scan.nextInt();
+		
+		System.out.println("Digite 1 numero");
+		n2 = scan.nextInt();
+		
+		//Operações Matemáticas	
+		int soma = n1 + n2;		//soma
+		System.out.println("A soma dos valores = " + soma);
+		
+		int sub = n1 - n2;		//subtração
+		System.out.println("A subtração de n1 por n2 = " + sub);
+		
+		int mult = n1 * n2;		//multiplicação
+		System.out.println("A multiplicação dos valores = " + mult);
+		
+		//Codições da divisão por zero
+		if(n2 != 0) {
+					
+			div = n1 / n2;		// divisão
+			System.out.println("A divisão de n1 por n2 = " + div);
+			
+			resto = n1 % n2;	//resto da divisão
+			System.out.println("O resto da divisão de n1 por n2 = " + resto);
+		
+		} else {
+			System.out.println("Um número não pode ser \n /n dividido por zero, porém zero dividido por algo continua sendo zero.");
+		}
+		
+		scan.close();
+	}
+
+}

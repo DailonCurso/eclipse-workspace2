@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Exemplo00 {
+
+	public static void main(String[] args) {
+
+		System.out.println("Aulas de Java turma QUA209047");
+		
+
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o nome:");
+		String name = sc.next();
+		System.out.println("Digite a Idade:");
+		int age = sc.nextInt();
+	
+		double balance = 289945.76;
+
+		System.out.println("Então, " + name + ". Você tem " + age + " anos e seu saldo é: " + balance);
+		
+		// CPF é uma boa prática se escrever/armazenar em Sring
+		sc.close();
+	}
+
+}

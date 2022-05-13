@@ -1,0 +1,48 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Desafio {
+
+	public static void main(String[] args) {
+		// Ler o valor de uma conta, adcionar a quantidade de pagantes, o valor que alguem irá pagar a mais e deixar o resto para dividir
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o valor da conta");
+		float valor = sc.nextFloat();
+		
+		System.out.println("Quantas pessoas irão pagar?");
+		int pagantes = sc.nextInt();
+		
+		float valorUnitario = valor / pagantes;
+		System.out.println(String.format("O valor por pessoa será de R$:%.2f", valorUnitario));
+		
+		System.out.println("Alguem irá pagar a mais?");
+		String controle = sc.next();
+		
+		if(controle.equals("yes") || controle.equals("sim") || controle.equals("y") || controle.equals("s") ) {
+			System.out.println("Quantos irão pagar a mais?");
+			
+			float qtosAmais = sc.nextFloat();
+			
+			for(int i = 0; i < qtosAmais; i++) {
+				System.out.println("Digite o valor que o" + (i +1) +"º ira pagar a mais:");
+				float valorDiferente = sc.nextFloat();
+				valor -= valorDiferente;
+				System.out.println("Ainda falta: R$:" + valor);
+				pagantes --;
+				valorUnitario = valor / pagantes;
+				System.out.println("Agora fica R$:" + valorUnitario +" para cada um.");
+			}
+			
+			
+			
+		}
+		
+		
+		
+		sc.close();
+	}
+
+}

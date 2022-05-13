@@ -1,0 +1,9 @@
+
+public class Questao02 {
+
+	public static void main(String[] args) {
+		// Ler um numero, apresentar o anterior e o próximo
+
+	}
+
+}

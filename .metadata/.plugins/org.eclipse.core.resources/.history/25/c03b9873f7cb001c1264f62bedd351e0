@@ -1,0 +1,33 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Desafio {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US); //
+		Scanner scn = new Scanner(System.in);
+		
+		//Scanners
+		System.out.print("Digite seu nome: ");
+		String name = scn.next();
+		
+		System.out.print("Digite sua idade: ");
+		int idade = scn.nextInt();
+		
+		System.out.print("Digite sua altura: ");
+		float altura = scn.nextFloat();
+		
+		System.out.print("Digite seu sexo: ");
+		char sexo = scn.next().charAt(2);
+		
+		System.out.println("Aulas de Java turma QUA209");
+		System.out.println("Nome = " + name);
+		System.out.println("Idade = " + idade);
+		System.out.println("Altura = " + altura);
+		System.out.println("Sexo = " + sexo);
+		
+		scn.close();
+	}
+	
+
+}

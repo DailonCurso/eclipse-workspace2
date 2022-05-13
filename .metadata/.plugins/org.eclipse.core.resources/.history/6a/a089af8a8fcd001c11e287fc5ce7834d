@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Questao03 {
+
+	public static void main(String[] args) {
+		// Ler um nome e digitar "olá <nome digitado>
+		
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Digite seu nome:");
+		
+		String nome = scn.next();
+		
+		System.out.println(String.format("Olá %s", nome));
+		
+		
+		scn.close();
+	}
+
+}

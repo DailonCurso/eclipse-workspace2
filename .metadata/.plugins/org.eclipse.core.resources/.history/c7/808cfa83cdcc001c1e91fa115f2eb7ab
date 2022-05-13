@@ -1,0 +1,11 @@
+
+public class Exemplo01 {
+
+	public static void main(String[] args) {
+		String nome = "Luiz Felipe";
+		int cpf = 00003265124;
+		String declaracao = "Eu ";
+
+	}
+
+}

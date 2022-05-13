@@ -1,0 +1,26 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Questao02 {
+
+	public static void main(String[] args) {
+		// Ler um numero, apresentar o anterior e o próximo
+		
+		Locale.setDefault(Locale.US);
+		Scanner scamNum = new Scanner(System.in);
+		
+		System.out.println("Digite um número:");
+		int numero = scamNum.nextInt();
+		
+		int antes = --numero;
+		int depois = ++numero;
+		
+		System.out.println(String.format("O número digitado foi %s, seu antecessor é %s e seu sucessor é %s", numero, antes, depois));
+		
+		
+		scamNum.close();
+		
+
+	}
+
+}

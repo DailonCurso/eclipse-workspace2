@@ -1,0 +1,9 @@
+
+public class Questao06 {
+
+	public static void main(String[] args) {
+		// Ler o valor de uma conta e quantas pessoas vão pagar a conta. O sistema vai apresentar quanto cada um vai pagar.
+
+	}
+
+}

@@ -1,0 +1,9 @@
+
+public class Desafio {
+
+	public static void main(String[] args) {
+		// Ler o valor de uma conta, adcionar a quantidade de pagantes, o valor que alguem irá pagar a mais e deixar o resto para diidir
+
+	}
+
+}

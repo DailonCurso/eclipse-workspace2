@@ -1,0 +1,9 @@
+
+public class Questao01 {
+
+	public static void main(String[] args) {
+		//Ler duas notas e apresentar a média final
+		
+	}
+
+}

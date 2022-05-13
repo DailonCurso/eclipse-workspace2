@@ -1,0 +1,12 @@
+
+public class Exemplo01 {
+
+	public static void main(String[] args) {
+		String nome = "Luiz Felipe";
+		String cpf = "000.032.651-24";
+		String declaracao = String.format("Eu %s portador do CPF: %s.",nome, cpf);
+		
+		System.out.println(declaracao);
+	}
+
+}

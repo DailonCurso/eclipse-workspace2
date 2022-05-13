@@ -1,0 +1,9 @@
+
+public class Questao05 {
+
+	public static void main(String[] args) {
+		// Ler o valor de um jantar, apresentar a taxa do garçom 10% e também o valor
+
+	}
+
+}

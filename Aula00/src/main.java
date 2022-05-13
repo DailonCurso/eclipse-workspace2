@@ -1,0 +1,38 @@
+import java.util.Locale;
+import java.util.Scanner;
+import javax.print.attribute.standard.PrinterInfo;
+import java.util.*;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		//Pegadinha do Hello World.
+		
+		System.out.println("Se Não Digitar a Palavra Mágica, certamente a linguágem não aprenderá. \n");
+		System.out.println("Digite a palavra mágica: \n");
+		
+		Scanner sc = new Scanner(System.in);
+		String magic = "Hello World";
+		String a = sc.nextLine();
+		
+		
+		if(a.equals(magic)) {
+			System.out.println("Legal jovem Padwan! \nVocê digitou: " + a + "\n\nQue a força esteja com você!");
+		}else {
+			System.out.println("Acertô Mizeravi!");
+		}
+		
+		/*
+		 * Testes 
+		 * 		de
+		 * 		 Códigos 
+		 * 				abaixo
+		 */
+		
+		
+	//	System.out.println("Hello World\nOlá Mundo");
+		
+	}
+
+}
